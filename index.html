@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- DOCTYPE specifies document type to the browser -->
+<html lang="en">
+<!-- element - building block -->
+<!-- Attribute - offers additional functionality to element -->
+<head>
+    <!-- Contains all metadata -->
+    <meta charset="UTF-8">
+    <!-- Character encoding for different alphabets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Specifies default sizing of the page -->
+    <title>HTML & CSS Lesson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contains everything displayed in the view port -->
+    <header style="color: lightcoral;">HTML & CSS Fundamentals</header>
+    <!-- ID and Class are used to build custom selectors -->
+    <nav id="nav-bar">
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Content</a>
+        <a href="" class="nav-link">Contact</a>
+        <a href="" class="nav-link">LinkedIn</a>
+        <a href="" class="nav-link">Resume</a>
+    </nav>
+
+    <section>
+        <article id="about" class="article">
+            <h1>Title</h1>
+            <p>This is a paragraph text</p>
+            <img 
+            id="bully-pic"
+            src="https://images.unsplash.com/photo-1693922874336-fd3c4b0084b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80" alt="Picture">
+        </article>
+
+        <article id="content" class="article">
+            <h1>HTML Rules</h1>
+            <ul>
+                <li>Renders Top to bottom (unless inline style)</li>
+                <li>Renders left to right</li>
+                <li>Some elements are inline while others are block</li>
+                <li>Takes up full width of the page</li>
+                <li>Takes as much height as the content within</li>
+                <li>Semantic Element - element that is descriptive in english language</li>
+            </ul>
+        </article>
+
+        <article class="article">
+            <h1>Order of Specificity</h1>
+            <div id="oos"></div>
+        </article>
+    </section>
+
+    <div id="" class="contact-container">
+        <form action="">
+            <input type="email" name="email" placeholder="Enter email">
+            <label for="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="10">Please enter your message</textarea>
+            <button>Send</button>
+        </form>
+    </div>
+
+    <footer>Copyright 2023</footer>
+</body>
+</html>

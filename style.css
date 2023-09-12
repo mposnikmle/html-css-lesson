@@ -1,0 +1,95 @@
+/* 
+    Language that defines look of HTML elements
+
+    Ruleset
+
+    Selector {
+        declaration
+        property: value;
+        property: value;
+        key: value;
+    }
+
+    Box Model
+
+    Every element has a margin, border, and padding
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #cacaca;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #245271;
+    padding: 1em;
+    text-align: center;
+}
+
+/* ID Selector */
+#nav-bar {
+    background-color: #396f94;
+    padding: 1em;
+    text-align: right;
+}
+
+/* Class Selector */
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: orangered;
+}
+
+#bully-pic {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.article {
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid #396f94;
+    border-radius: 5px;
+}
+
+.article > ul {
+    margin-left: 1em;
+}
+
+/* Compound Selector */
+.article > h1 {
+    margin-bottom: 1em;
+}
+
+.contact-container {
+    margin: 1em;
+}
+
+/* 
+    Order of Specificity
+*/
+
+#oos {
+    width: 500px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.article > div {
+    background-color: red;
+}
+
+.oos {
+    background-color: royalblue;
+}
